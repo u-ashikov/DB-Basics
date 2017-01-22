@@ -1,0 +1,20 @@
+CREATE TABLE Minions 
+(
+	Id int IDENTITY NOT NULL,
+	Name nvarchar(255) NOT NULL,
+	Age int NOT NULL
+)
+
+CREATE TABLE Towns 
+(
+	Id int IDENTITY NOT NULL,
+	Name nvarchar(100)
+)
+
+ALTER TABLE Minions
+ADD CONSTRAINT PK_Id
+PRIMARY KEY (Id)
+
+ALTER TABLE Towns
+ADD CONSTRAINT PK_TownId
+PRIMARY KEY (Id)

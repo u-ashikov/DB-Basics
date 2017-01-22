@@ -1,0 +1,3 @@
+ALTER TABLE People
+ADD CONSTRAINT CurrentDate 
+DEFAULT GETDATE() FOR LastLoginTime 

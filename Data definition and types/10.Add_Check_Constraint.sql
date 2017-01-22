@@ -1,0 +1,9 @@
+ALTER TABLE People
+ADD CONSTRAINT MinLength
+CHECK (LEN(Password)>=5)
+
+ALTER TABLE People
+ALTER COLUMN Password varchar(26)
+
+ALTER TABLE People
+DROP CONSTRAINT MinLength
