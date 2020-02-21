@@ -1,1 +1,1 @@
-# C-DB-Basics
+# SoftUni DB Basics course exercises.
